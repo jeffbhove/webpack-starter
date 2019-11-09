@@ -1,6 +1,32 @@
-$body-color: slateblue;
+@import '../../node_modules/normalize-scss/sass/normalize/import-now';
+@import 'variables';
 
 body {
-  color: $body-color;
-  font-family: sans-serif;
+  color: $trp-text-color-primary;
+  font-family: $trp-font-family-regular;
+  font-size: $trp-text-font-size-default;
+}
+
+a {
+  color: $trp-link-default;
+
+  &:hover {
+    color: $trp-link-hover;
+  }
+}
+
+thead {
+  th {
+    padding: $trp-spacing-padding-large;
+    font-family: $trp-font-family-bold;
+    color: $trp-table-head-color;
+    background-color: $trp-table-head-background-color;
+  }
+}
+
+tbody {
+  td {
+    padding: $trp-spacing-padding-medium;
+    font-size: $trp-table-body-font-size;
+  }
 }
